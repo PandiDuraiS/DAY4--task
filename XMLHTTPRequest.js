@@ -5,6 +5,6 @@ request.onload = function() {
     var data = JSON.parse(this.response);
     console.log(data);
     for (var i = 0; i < 250; i++) {
-        console.log(data[i].flag);
+        console.log(data[i].name + " " + data[i].region + " " + data[i].subregion + " " + data[i].population);
     }
-};
+}
